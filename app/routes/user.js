@@ -13,7 +13,7 @@ module.exports.setRouter = (app) => {
     /**
      * @apiGroup users
      * @apiVersion  1.0.0
-     * @api {post} /api/v1/users/signup New User SignUp.
+     * @api {post} /api/v1/users/signup api for new users to register.
      *     
      * @apiParam {string} firstName firstName of the user. (body params) (required)
      * @apiParam {string} lastName lastName of the user. (body params)
@@ -50,7 +50,7 @@ module.exports.setRouter = (app) => {
     /**
      * @apiGroup users
      * @apiVersion  1.0.0
-     * @api {post} /api/v1/users/signin api for user signin.
+     * @api {post} /api/v1/users/signin api for user login.
      *
      * @apiParam {string} email E-mail ID of the user. (body params) (required)
      * @apiParam {string} password Password of the user. (body params) (required)
@@ -89,7 +89,7 @@ module.exports.setRouter = (app) => {
     /**
     * @apiGroup users
     * @apiVersion  1.0.0
-    * @api {post} /api/v1/users/logout/:userId  Logout currently logged-in user.
+    * @api {post} /api/v1/users/logout/:userId  Logout user whose is currently logged-in.
     *
     * @apiParam {String} authToken The token for authentication.(Send authToken as query parameter, body parameter or as a header)
     * @apiParam {string} userId userId of the user. (body Params) (required)
